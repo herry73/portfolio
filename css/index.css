@@ -1,0 +1,4 @@
+/* Specific overrides for the homepage if needed */
+.hero-text-spacing {
+    line-height: 1.1;
+}
