@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>Contact - Herry</title>
+      <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+      <link rel="stylesheet" type="text/css" href="css/global.css" />
+      <script>
+         tailwind.config = {
+           darkMode: "class",
+           theme: {
+             extend: {
+               colors: {
+                 primary: "#FFFFFF",
+                 "background-light": "#F0F2F5",
+                 "background-dark": "#0A0A0A",
+                 "content-light": "#1C1C1E",
+                 "content-dark": "#E5E5E7",
+                 "subtle-light": "#636366",
+                 "subtle-dark": "#8E8E93",
+                 "border-light": "#D1D1D6",
+                 "border-dark": "#2A2A2C",
+               },
+               fontFamily: {
+                 display: ["Space Grotesk", "sans-serif"],
+               },
+               borderRadius: {
+                 DEFAULT: "0.5rem",
+                 lg: "1rem",
+                 full: "9999px"
+               },
+               animation: {
+                 fadeInUp: 'fadeInUp 0.8s ease-out forwards'
+               },
+               keyframes: {
+                 fadeInUp: {
+                   '0%': { opacity: '0', transform: 'translateY(20px)' },
+                   '100%': { opacity: '1', transform: 'translateY(0)' },
+                 }
+               }
+             },
+           },
+         };
+      </script>
+   </head>
+   <body class="bg-background-light dark:bg-background-dark font-display text-content-light dark:text-content-dark transition-colors duration-300"
+      style="background-image: url('/assets/images/bg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      <div class="sphere-container">
+         <div class="sphere sphere-1"></div>
+         <div class="sphere sphere-2"></div>
+         <div class="sphere sphere-3"></div>
+      </div>
+      <header class="fixed top-0 left-0 w-full z-50 py-8 px-6 md:px-12 animate-fadeInUp">
+         <nav class="flex justify-between items-center w-full">
+            <div class="flex items-center">
+               <button id="mobile-menu-btn" class="md:hidden text-content-light dark:text-content-dark focus:outline-none mr-4">
+               <span class="material-icons-outlined text-3xl">menu</span>
+               </button>
+               <div class="hidden md:flex items-center space-x-8 text-sm text-subtle-light dark:text-subtle-dark">
+                  <a class="hover:text-content-light dark:hover:text-content-dark transition-colors duration-200" href="about.html">about</a>
+                  <a class="hover:text-content-light dark:hover:text-content-dark transition-colors duration-200" href="projects.html">projects</a>
+                  <a class="text-content-light dark:text-content-dark font-medium" href="contact.html">contact</a>
+               </div>
+            </div>
+            <a class="text-xl font-bold text-content-light dark:text-content-dark tracking-tight" href="index.html">Herry</a>
+         </nav>
+         <div id="mobile-menu" class="hidden absolute top-full left-0 w-full mt-2 px-6 pb-6 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-xl border-b border-border-light dark:border-border-dark shadow-2xl flex-col space-y-4 md:hidden">
+            <a class="text-lg font-medium text-content-light dark:text-content-dark block py-2 border-b border-border-light dark:border-border-dark" href="about.html">about</a>
+            <a class="text-lg font-medium text-content-light dark:text-content-dark block py-2 border-b border-border-light dark:border-border-dark" href="projects.html">projects</a>
+            <a class="text-lg font-medium text-content-light dark:text-content-dark block py-2" href="contact.html">contact</a>
+         </div>
+      </header>
+      <div class="relative h-screen flex flex-col justify-between px-4 sm:px-6 lg:px-8 overflow-hidden pt-32">
+         <main class="relative z-10 flex flex-col items-center justify-center flex-grow w-full max-w-7xl mx-auto">
+            <div class="text-center animate-fadeInUp" style="animation-delay: 150ms;">
+               <h1 class="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-white drop-shadow-md mb-12">
+                  Get In Touch
+               </h1>
+               <div class="flex flex-wrap justify-center gap-8 md:gap-16 text-lg md:text-xl font-medium text-zinc-300 drop-shadow-sm">
+                  <a href="https://github.com/herry73" target="_blank" class="hover:text-white hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] transition-all duration-300 transform hover:-translate-y-1">
+                  GitHub
+                  </a>
+                  <a href="mailto:herrypatel770@gmail.com" class="hover:text-white hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] transition-all duration-300 transform hover:-translate-y-1">
+                  Email
+                  </a>
+                  <a href="https://www.linkedin.com/in/herry-patel-477507220/" class="hover:text-white hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] transition-all duration-300 transform hover:-translate-y-1">
+                  LinkedIn
+                  </a>
+                  <a href="#" class="hover:text-white hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] transition-all duration-300 transform hover:-translate-y-1">
+                  CV
+                  </a>
+               </div>
+            </div>
+         </main>
+         <footer class="relative z-10 w-full py-8 px-4 md:px-6 flex flex-col md:flex-row justify-between items-center text-sm text-subtle-light dark:text-subtle-dark animate-fadeInUp" style="animation-delay: 300ms;">
+            <p> 2025 Herry</p>
+         </footer>
+      </div>
+      <script>
+         const menuBtn = document.getElementById('mobile-menu-btn');
+         const mobileMenu = document.getElementById('mobile-menu');
+         
+         if (menuBtn && mobileMenu) {
+             menuBtn.addEventListener('click', () => {
+                 mobileMenu.classList.toggle('hidden');
+                 mobileMenu.classList.toggle('flex');
+             });
+         }
+      </script>
+   </body>
+</html>
