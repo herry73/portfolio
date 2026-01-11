@@ -1,144 +1,148 @@
 <!DOCTYPE html>
 <html class="dark" lang="en">
-   <head>
-      <meta charset="utf-8" />
-      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-      <title>Projects</title>
-      <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
-      <link rel="stylesheet" type="text/css" href="css/projects.css" />
-      <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-      <script>
-         tailwind.config = {
-           darkMode: "class",
-           theme: {
-             extend: {
-               colors: {
-                 primary: "#FFFFFF",
-                 "background-light": "#F0F2F5",
-                 "background-dark": "#0A0A0A",
-                 "content-light": "#1C1C1E",
-                 "content-dark": "#E5E5E7",
-                 "subtle-light": "#636366",
-                 "subtle-dark": "#8E8E93",
-                 "border-light": "#D1D1D6",
-                 "border-dark": "#2A2A2C",
-               },
-               fontFamily: {
-                 display: ["Space Grotesk", "sans-serif"],
-               },
-               borderRadius: {
-                 DEFAULT: "0.5rem",
-                 lg: "1rem",
-                 full: "9999px"
-               },
-               animation: {
-                 fadeInUp: 'fadeInUp 0.8s ease-out forwards'
-               },
-               keyframes: {
-                 fadeInUp: {
-                   '0%': { opacity: '0', transform: 'translateY(20px)' },
-                   '100%': { opacity: '1', transform: 'translateY(0)' },
-                 }
-               }
-             },
-           },
-         };
-      </script>
-   </head>
-   <body class="bg-background-light dark:bg-background-dark font-display text-content-light dark:text-content-dark transition-colors duration-300">
-      <div class="sphere-container">
-         <div class="sphere sphere-1"></div>
-         <div class="sphere sphere-2"></div>
-         <div class="sphere sphere-3"></div>
-      </div>
-      <header class="fixed top-0 left-0 w-full z-50 py-8 px-6 md:px-12 animate-fadeInUp">
-         <nav class="flex justify-between items-center w-full">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Projects - Herry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/projects.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FFFFFF",
+              "background-light": "#F0F2F5",
+              "background-dark": "#0A0A0A",
+              "content-light": "#1C1C1E",
+              "content-dark": "#E5E5E7",
+              "subtle-light": "#636366",
+              "subtle-dark": "#8E8E93",
+              "border-light": "#D1D1D6",
+              "border-dark": "#2A2A2C",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            animation: {
+              fadeInUp: 'fadeInUp 0.8s ease-out forwards'
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-content-light dark:text-content-dark transition-colors duration-300">
+    <div class="sphere-container">
+      <div class="sphere sphere-1"></div>
+      <div class="sphere sphere-2"></div>
+      <div class="sphere sphere-3"></div>
+    </div>
+    
+    <header class="fixed top-0 left-0 w-full z-50 py-8 px-6 md:px-12 animate-fadeInUp">
+        <nav class="flex justify-between items-center w-full">
             <div class="flex items-center">
-               <button id="mobile-menu-btn" class="md:hidden text-content-light dark:text-content-dark focus:outline-none mr-4">
-               <span class="material-icons-outlined text-3xl">menu</span>
-               </button>
-               <div class="hidden md:flex items-center space-x-8 text-sm text-subtle-light dark:text-subtle-dark">
-                  <a class="hover:text-content-light dark:hover:text-content-dark transition-colors duration-200" href="about.html">about</a>
-                  <a class="text-content-light dark:text-content-dark font-medium" href="projects.html">projects</a>
-                  <a class="hover:text-content-light dark:hover:text-content-dark transition-colors duration-200" href="contact.html">contact</a>
-               </div>
+                <button id="mobile-menu-btn" class="md:hidden text-content-light dark:text-content-dark focus:outline-none mr-4">
+                    <span class="material-icons-outlined text-3xl">menu</span>
+                </button>
+                <div class="hidden md:flex items-center space-x-8 text-sm text-subtle-light dark:text-subtle-dark">
+                    <a class="hover:text-content-light dark:hover:text-content-dark transition-colors duration-200" href="about.html">about</a>
+                    <a class="text-content-light dark:text-content-dark font-medium" href="projects.html">projects</a>
+                    <a class="hover:text-content-light dark:hover:text-content-dark transition-colors duration-200" href="blog.html">blog</a>
+                    <a class="hover:text-content-light dark:hover:text-content-dark transition-colors duration-200" href="contact.html">contact</a>
+                </div>
             </div>
             <a class="text-xl font-bold text-content-light dark:text-content-dark tracking-tight" href="index.html">Herry</a>
-         </nav>
-         <div id="mobile-menu" class="hidden absolute top-full left-0 w-full mt-2 px-6 pb-6 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-xl border-b border-border-light dark:border-border-dark shadow-2xl flex-col space-y-4 md:hidden">
+        </nav>
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full mt-2 px-6 pb-6 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-xl border-b border-border-light dark:border-border-dark shadow-2xl flex-col space-y-4 md:hidden">
             <a class="text-lg font-medium text-content-light dark:text-content-dark block py-2 border-b border-border-light dark:border-border-dark" href="about.html">about</a>
             <a class="text-lg font-medium text-content-light dark:text-content-dark block py-2 border-b border-border-light dark:border-border-dark" href="projects.html">projects</a>
+            <a class="text-lg font-medium text-content-light dark:text-content-dark block py-2 border-b border-border-light dark:border-border-dark" href="blog.html">blog</a>
             <a class="text-lg font-medium text-content-light dark:text-content-dark block py-2" href="contact.html">contact</a>
-         </div>
-      </header>
-      <div class="relative min-h-screen flex flex-col items-center px-4 sm:px-6 lg:px-8 overflow-hidden pt-32">
-         <div class="relative z-10 w-full max-w-5xl mx-auto pb-20 md:pb-32">
+        </div>
+    </header>
+
+    <div class="relative min-h-screen flex flex-col items-center px-4 sm:px-6 lg:px-8 overflow-hidden pt-32">
+        <div class="relative z-10 w-full max-w-6xl mx-auto pb-20 md:pb-32">
             <main class="text-left">
-               <div class="animate-fadeInUp" style="animation-delay: 150ms;">
-                  <h1 class="text-5xl md:text-6xl font-bold tracking-tighter text-content-light dark:text-content-dark mb-4"> Projects </h1>
-                  <p class="text-lg text-subtle-light dark:text-subtle-dark mb-12"> A collection of my work </p>
-               </div>
-               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <a href="https://github.com/herry73/helsinki_navigator" class="group animate-fadeInUp block" style="animation-delay: 300ms;">
-                     <div class="p-6 h-full border border-border-light dark:border-border-dark rounded-lg bg-background-light dark:bg-background-dark/50 hover:border-content-light dark:hover:border-content-dark transition-all duration-300">
-                        <div class="flex items-center justify-between mb-4">
-                           <h3 class="text-xl font-semibold text-content-light dark:text-content-dark group-hover:underline">Cognitive City Navigator</h3>
-                           <span class="material-icons-outlined text-subtle-light dark:text-subtle-dark">code</span>
-                        </div>
-                        <p class="text-base text-subtle-light dark:text-subtle-dark mb-4"> A Next-Gen Semantic Travel Guide powered by Knowledge Graphs, Vector Search, and Real-Time Data. Uses Neo4j to understand connectivity between Stops and POIs, and Llama-3 to generate witty, context-aware itineraries. Visualizes the density of your interest across the city using glowing 2D heat layers. </p>
-                        <div class="flex flex-wrap gap-2">
-                           <span class="text-xs px-2 py-1 bg-border-light dark:bg-border-dark text-content-light dark:text-content-dark rounded-full">Knowledge Graphs</span>
-                           <span class="text-xs px-2 py-1 bg-border-light dark:bg-border-dark text-content-light dark:text-content-dark rounded-full">RAG</span>
-                           <span class="text-xs px-2 py-1 bg-border-light dark:bg-border-dark text-content-light dark:text-content-dark rounded-full">Neo4J</span>
-                        </div>
-                     </div>
-                  </a>
-                  <a href="https://github.com/herry73/c4at" class="group animate-fadeInUp block" style="animation-delay: 450ms;">
-                     <div class="p-6 h-full border border-border-light dark:border-border-dark rounded-lg bg-background-light dark:bg-background-dark/50 hover:border-content-light dark:hover:border-content-dark transition-all duration-300">
-                        <div class="flex items-center justify-between mb-4">
-                           <h3 class="text-xl font-semibold text-content-light dark:text-content-dark group-hover:underline">C4AT</h3>
-                           <span class="material-icons-outlined text-subtle-light dark:text-subtle-dark">memory</span>
-                        </div>
-                        <p class="text-base text-subtle-light dark:text-subtle-dark mb-4"> Engineered a scalable, concurrent TCP chat server in Go. It efficiently handles multiple simultaneous client connections using goroutines and channels and features a robust anti-abuse system with rate-limiting and automatic IP banning to ensure high availability and server stability. </p>
-                        <div class="flex flex-wrap gap-2">
-                           <span class="text-xs px-2 py-1 bg-border-light dark:bg-border-dark text-content-light dark:text-content-dark rounded-full">Networks</span>
-                           <span class="text-xs px-2 py-1 bg-border-light dark:bg-border-dark text-content-light dark:text-content-dark rounded-full">GO</span>
-                           <span class="text-xs px-2 py-1 bg-border-light dark:bg-border-dark text-content-light dark:text-content-dark rounded-full">Internet Protocols</span>
-                        </div>
-                     </div>
-                  </a>
-                  <a href="https://github.com/herry73/cuda-practice" class="group animate-fadeInUp block" style="animation-delay: 600ms;">
-                     <div class="p-6 h-full border border-border-light dark:border-border-dark rounded-lg bg-background-light dark:bg-background-dark/50 hover:border-content-light dark:hover:border-content-dark transition-all duration-300">
-                        <div class="flex items-center justify-between mb-4">
-                           <h3 class="text-xl font-semibold text-content-light dark:text-content-dark group-hover:underline">CUDA Playground</h3>
-                           <span class="material-icons-outlined text-subtle-light dark:text-subtle-dark">science</span>
-                        </div>
-                        <p class="text-base text-subtle-light dark:text-subtle-dark mb-4"> My repository to practice learning CUDA. </p>
-                        <div class="flex flex-wrap gap-2">
-                           <span class="text-xs px-2 py-1 bg-border-light dark:bg-border-dark text-content-light dark:text-content-dark rounded-full">CUDA</span>
-                           <span class="text-xs px-2 py-1 bg-border-light dark:bg-border-dark text-content-light dark:text-content-dark rounded-full">Algorithm Optimization</span>
-                           <span class="text-xs px-2 py-1 bg-border-light dark:bg-border-dark text-content-light dark:text-content-dark rounded-full">GPU</span>
-                        </div>
-                     </div>
-                  </a>
-               </div>
+              <div class="animate-fadeInUp" style="animation-delay: 150ms;">
+                <h1 class="text-5xl md:text-6xl font-bold tracking-tighter text-content-light dark:text-content-dark mb-4"> Projects </h1>
+                <p class="text-lg text-subtle-light dark:text-subtle-dark mb-12"> Technical deep dives & experiments </p>
+              </div>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                
+                <a href="quantization.html" class="group animate-fadeInUp block" style="animation-delay: 750ms;">
+                    <div class="p-8 h-full border border-border-light dark:border-border-dark rounded-xl bg-background-light dark:bg-background-dark/50 hover:border-content-light dark:hover:border-content-dark transition-all duration-300 flex flex-col">
+                      <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-2xl font-bold text-content-light dark:text-content-dark group-hover:underline">Driver State Monitoring</h3>
+                        <span class="material-icons-outlined text-subtle-light dark:text-subtle-dark">videocam</span>
+                      </div>
+                      <p class="text-base text-subtle-light dark:text-subtle-dark mb-6 flex-grow leading-relaxed"> Real-time computer vision on CPU-only edge devices. Built a quantized MobileNetV3 system to detect drowsiness with &lt; 0.5% accuracy loss. </p>
+                      <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="text-xs px-3 py-1 bg-zinc-200 dark:bg-zinc-800 text-content-light dark:text-content-dark rounded-full font-medium">PyTorch</span>
+                        <span class="text-xs px-3 py-1 bg-zinc-200 dark:bg-zinc-800 text-content-light dark:text-content-dark rounded-full font-medium">Quantization</span>
+                        <span class="text-xs px-3 py-1 bg-zinc-200 dark:bg-zinc-800 text-content-light dark:text-content-dark rounded-full font-medium">Edge AI</span>
+                      </div>
+                    </div>
+                </a>
+
+                <a href="cognitive.html" class="group animate-fadeInUp block" style="animation-delay: 300ms;">
+                  <div class="p-8 h-full border border-border-light dark:border-border-dark rounded-xl bg-background-light dark:bg-background-dark/50 hover:border-content-light dark:hover:border-content-dark transition-all duration-300 flex flex-col">
+                    <div class="flex items-center justify-between mb-6">
+                      <h3 class="text-2xl font-bold text-content-light dark:text-content-dark group-hover:underline">Cognitive City Navigator</h3>
+                      <span class="material-icons-outlined text-subtle-light dark:text-subtle-dark">code</span>
+                    </div>
+                    <p class="text-base text-subtle-light dark:text-subtle-dark mb-6 flex-grow leading-relaxed"> A Next-Gen Semantic Travel Guide powered by Knowledge Graphs. Visualizes interest density using glowing 2D heat layers. </p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                      <span class="text-xs px-3 py-1 bg-zinc-200 dark:bg-zinc-800 text-content-light dark:text-content-dark rounded-full font-medium">Neo4J</span>
+                      <span class="text-xs px-3 py-1 bg-zinc-200 dark:bg-zinc-800 text-content-light dark:text-content-dark rounded-full font-medium">RAG</span>
+                      <span class="text-xs px-3 py-1 bg-zinc-200 dark:bg-zinc-800 text-content-light dark:text-content-dark rounded-full font-medium">React</span>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="https://github.com/herry73/c4at" class="group animate-fadeInUp block" style="animation-delay: 450ms;">
+                    <div class="p-8 h-full border border-border-light dark:border-border-dark rounded-xl bg-background-light dark:bg-background-dark/50 hover:border-content-light dark:hover:border-content-dark transition-all duration-300 flex flex-col">
+                      <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-2xl font-bold text-content-light dark:text-content-dark group-hover:underline">C4AT Server</h3>
+                        <span class="material-icons-outlined text-subtle-light dark:text-subtle-dark">dns</span>
+                      </div>
+                      <p class="text-base text-subtle-light dark:text-subtle-dark mb-6 flex-grow leading-relaxed"> A scalable, concurrent TCP chat server in Go. Handles thousands of connections using goroutines and custom rate-limiting middleware. </p>
+                      <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="text-xs px-3 py-1 bg-zinc-200 dark:bg-zinc-800 text-content-light dark:text-content-dark rounded-full font-medium">Go</span>
+                        <span class="text-xs px-3 py-1 bg-zinc-200 dark:bg-zinc-800 text-content-light dark:text-content-dark rounded-full font-medium">TCP/IP</span>
+                        <span class="text-xs px-3 py-1 bg-zinc-200 dark:bg-zinc-800 text-content-light dark:text-content-dark rounded-full font-medium">Concurrency</span>
+                      </div>
+                    </div>
+                </a>
+
+              </div>
             </main>
             <footer class="w-full py-8 text-center animate-fadeInUp">
-               <p class="text-sm text-subtle-light dark:text-subtle-dark">All rights reserved.</p>
+              <p class="text-sm text-subtle-light dark:text-subtle-dark">All rights reserved.</p>
             </footer>
-         </div>
-      </div>
-      <script>
-         const menuBtn = document.getElementById('mobile-menu-btn');
-         const mobileMenu = document.getElementById('mobile-menu');
-         
-         if (menuBtn && mobileMenu) {
-             menuBtn.addEventListener('click', () => {
-                 mobileMenu.classList.toggle('hidden');
-                 mobileMenu.classList.toggle('flex');
-             });
-         }
-      </script>
-   </body>
+        </div>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+            });
+        }
+    </script>
+</body>
 </html>

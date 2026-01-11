@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Cognitive City Navigator - Herry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css/global.css" />
+    
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FFFFFF",
+              "background-light": "#F0F2F5",
+              "background-dark": "#0A0A0A",
+              "content-light": "#1C1C1E",
+              "content-dark": "#E5E5E7",
+              "subtle-light": "#636366",
+              "subtle-dark": "#8E8E93",
+              "border-light": "#D1D1D6",
+              "border-dark": "#2A2A2C",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            animation: {
+              fadeInUp: 'fadeInUp 0.8s ease-out forwards'
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-content-light dark:text-content-dark transition-colors duration-300">
+    <div class="sphere-container">
+      <div class="sphere sphere-1"></div>
+      <div class="sphere sphere-2"></div>
+      <div class="sphere sphere-3"></div>
+    </div>
+    
+    <header class="fixed top-0 left-0 w-full z-50 py-8 px-6 md:px-12 animate-fadeInUp">
+        <nav class="flex justify-between items-center w-full">
+            <div class="flex items-center">
+                <button id="mobile-menu-btn" class="md:hidden text-content-light dark:text-content-dark focus:outline-none mr-4">
+                    <span class="material-icons-outlined text-3xl">menu</span>
+                </button>
+                <div class="hidden md:flex items-center space-x-8 text-sm text-subtle-light dark:text-subtle-dark">
+                    <a class="hover:text-content-light dark:hover:text-content-dark transition-colors duration-200" href="../about.html">about</a>
+                    <a class="text-content-light dark:text-content-dark font-medium" href="../projects.html">projects</a>
+                    <a class="hover:text-content-light dark:hover:text-content-dark transition-colors duration-200" href="../blog.html">blog</a>
+                    <a class="hover:text-content-light dark:hover:text-content-dark transition-colors duration-200" href="../contact.html">contact</a>
+                </div>
+            </div>
+            <a class="text-xl font-bold text-content-light dark:text-content-dark tracking-tight" href="../index.html">Herry</a>
+        </nav>
+        
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full mt-2 px-6 pb-6 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-xl border-b border-border-light dark:border-border-dark shadow-2xl flex-col space-y-4 md:hidden">
+            <a class="text-lg font-medium text-content-light dark:text-content-dark block py-2 border-b border-border-light dark:border-border-dark" href="../about.html">about</a>
+            <a class="text-lg font-medium text-content-light dark:text-content-dark block py-2 border-b border-border-light dark:border-border-dark" href="../projects.html">projects</a>
+            <a class="text-lg font-medium text-content-light dark:text-content-dark block py-2 border-b border-border-light dark:border-border-dark" href="../blog.html">blog</a>
+            <a class="text-lg font-medium text-content-light dark:text-content-dark block py-2" href="../contact.html">contact</a>
+        </div>
+    </header>
+
+    <div class="relative min-h-screen flex flex-col items-center px-4 sm:px-6 lg:px-8 overflow-hidden pt-32">
+        <div class="relative z-10 w-full max-w-3xl mx-auto pb-20 md:pb-32">
+            <main>
+              
+              <div class="animate-fadeInUp mb-8" style="animation-delay: 150ms;">
+                <a href="projects.html" class="text-sm text-subtle-light dark:text-subtle-dark hover:text-content-light dark:hover:text-content-dark transition-colors flex items-center">
+                    <span class="material-icons-outlined text-sm mr-1">arrow_back</span> Back to Projects
+                </a>
+              </div>
+
+              <div class="animate-fadeInUp mb-10 pb-8 border-b border-border-light dark:border-border-dark" style="animation-delay: 200ms;">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold tracking-tighter text-content-light dark:text-content-dark mb-4 leading-tight">
+                            Cognitive City Navigator
+                        </h1>
+                        <p class="text-lg text-subtle-light dark:text-subtle-dark">
+                            Semantic Urban Intelligence with Knowledge Graphs and Neural Retrieval
+                        </p>
+                    </div>
+                    
+                    <a href="https://github.com/herry73/cognitive_city_navigator" target="_blank" class="inline-flex items-center px-6 py-3 bg-content-light dark:bg-content-dark text-background-light dark:text-background-dark font-bold rounded-lg hover:opacity-90 transition-opacity">
+                        <span class="material-icons-outlined text-lg mr-2">code</span>
+                        View Code
+                    </a>
+                </div>
+              </div>
+
+              <article class="prose prose-lg dark:prose-invert prose-headings:font-display prose-a:text-blue-500 hover:prose-a:text-blue-400 max-w-none animate-fadeInUp" style="animation-delay: 300ms;">
+                
+                <h2>Overview</h2>
+                <p>
+                    Cognitive City Navigator is an experimental system that explores how semantic reasoning, graph structures, and neural representations can be combined to support intelligent decision-making in urban environments.
+                </p>
+                <p>
+                    Instead of treating a city as a collection of static routes and locations, the system models it as a living knowledge graph—where transportation, points of interest, and contextual signals interact dynamically. The goal is not just navigation, but context-aware guidance that adapts to user intent and real-world constraints.
+                </p>
+
+                <h2>Motivation</h2>
+                <p>
+                    Traditional navigation systems expose users to fragmented information: static timetables, live vehicle maps, and separate weather or POI searches. This fragmentation creates decision fatigue, especially in unfamiliar cities.
+                </p>
+                <p>
+                    Cognitive City Navigator investigates how a semantic abstraction layer—built on top of raw transport and geospatial data—can reduce this cognitive load by answering higher-level questions like:
+                    <em>“What is the best decision to make right now, given my intent and the city’s current state?”</em>
+                </p>
+
+                <h2>System Architecture</h2>
+                <p>The system is designed as a modular pipeline with three core components:</p>
+
+                <h3>1. Semantic Representation Layer (Knowledge Graph)</h3>
+                <p>
+                    At the core lies a Neo4j knowledge graph that models the city as interconnected entities rather than isolated records. Examples of modeled relationships include:
+                </p>
+                <ul>
+                    <li>Routes operating on stops</li>
+                    <li>Walkable proximity between stops</li>
+                    <li>Points of interest located near transit nodes</li>
+                </ul>
+                <p>
+                    This graph structure enables relational queries such as smart transfers, proximity-based recommendations, and multi-hop reasoning across the transport network.
+                </p>
+
+                <h3>2. Neural Retrieval & Inference</h3>
+                <p>
+                    Unstructured user intent is processed using sentence-level embeddings to capture semantic meaning beyond keyword matching. These embeddings are used to:
+                </p>
+                <ul>
+                    <li>Match user intent to relevant routes, areas, or POIs</li>
+                    <li>Rank candidate decisions based on semantic similarity</li>
+                    <li>Bridge natural language queries with structured graph data</li>
+                </ul>
+                <p>This hybrid approach combines neural flexibility with graph precision.</p>
+
+                <h3>3. Context-Aware Application Layer</h3>
+                <p>
+                    The application layer integrates static transport data (GTFS), real-time vehicle feeds (GTFS-RT), and contextual signals such as weather. A lightweight inference pipeline dynamically injects graph-derived context into a language model, allowing the system to generate structured, situation-aware recommendations rather than free-form text.
+                </p>
+
+                <h2>Key Features</h2>
+                <ul>
+                    <li><strong>Semantic City Graph:</strong> A labeled property graph encoding transport topology, walkability, and spatial proximity.</li>
+                    <li><strong>Context-Aware Recommendations:</strong> Suggestions adapt to real-time conditions such as weather, live vehicle positions, and user location.</li>
+                    <li><strong>Hybrid Reasoning Pipeline:</strong> Neural embeddings for intent understanding combined with symbolic graph traversal for constraint satisfaction.</li>
+                    <li><strong>Real-Time Responsiveness:</strong> Live vehicle data is continuously ingested and filtered to reflect the city’s current state.</li>
+                </ul>
+
+                <h2>Technical Stack</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                    <div class="p-4 border border-border-light dark:border-border-dark rounded-lg">
+                        <span class="block font-bold text-content-light dark:text-content-dark">Core Logic</span>
+                        <span class="text-sm text-subtle-light dark:text-subtle-dark">Python</span>
+                    </div>
+                    <div class="p-4 border border-border-light dark:border-border-dark rounded-lg">
+                        <span class="block font-bold text-content-light dark:text-content-dark">Knowledge Graph</span>
+                        <span class="text-sm text-subtle-light dark:text-subtle-dark">Neo4j</span>
+                    </div>
+                    <div class="p-4 border border-border-light dark:border-border-dark rounded-lg">
+                        <span class="block font-bold text-content-light dark:text-content-dark">Neural Models</span>
+                        <span class="text-sm text-subtle-light dark:text-subtle-dark">Sentence Transformers, PyTorch</span>
+                    </div>
+                    <div class="p-4 border border-border-light dark:border-border-dark rounded-lg">
+                        <span class="block font-bold text-content-light dark:text-content-dark">Data Sources</span>
+                        <span class="text-sm text-subtle-light dark:text-subtle-dark">GTFS, GTFS-RT, Geospatial APIs</span>
+                    </div>
+                    <div class="p-4 border border-border-light dark:border-border-dark rounded-lg">
+                        <span class="block font-bold text-content-light dark:text-content-dark">Deployment</span>
+                        <span class="text-sm text-subtle-light dark:text-subtle-dark">Docker, Streamlit</span>
+                    </div>
+                </div>
+
+                <h2>Design Takeaways</h2>
+                <ul>
+                    <li>Knowledge graphs provide interpretability and structure that pure neural systems lack.</li>
+                    <li>Neural embeddings excel at translating ambiguous human intent into machine-usable signals.</li>
+                    <li>Combining symbolic and neural approaches enables more robust urban reasoning.</li>
+                    <li>Cities are better modeled as systems of relationships, not flat datasets.</li>
+                </ul>
+
+                <h2>Future Directions</h2>
+                <ul>
+                    <li>Graph-based learning (GNNs) for predictive congestion modeling.</li>
+                    <li>Deeper multimodal integration (bikes, scooters, pedestrian flows).</li>
+                    <li>More explicit uncertainty modeling in recommendations.</li>
+                </ul>
+
+              </article>
+
+            </main>
+            
+            <footer class="w-full py-12 text-center mt-12 border-t border-border-light dark:border-border-dark animate-fadeInUp">
+              <p class="text-sm text-subtle-light dark:text-subtle-dark">All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+    
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+            });
+        }
+    </script>
+</body>
+</html>
